@@ -1,0 +1,23 @@
+<h1>Alterações - 18/09/2018</h1>
+
+<h3>Sistema </h3>
+
+<h4> Juan </h4>
+
+- Adicionado Menu Inicial
+- Criada classe Grupo no pacote engine
+- Alterada classe Yagami
+  - Inserida variável Grupo[] grupos
+- Agora o nome do atalho é puxado da propriedade Name do componente
+- Array de telas não é mais deprecated
+- Component desktop da view Main agora é static  
+- Criada janela de busca/abertura rápida de telas
+
+  
+- Modificações na tela de login
+- Modificações na barra de tarefas
+  - Adicionado botão de fechar sistema
+  - Adicionado botão para abrir menu
+
+
+<h3>Banco de Dados </h3>

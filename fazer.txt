@@ -1,0 +1,41 @@
+CRIAR ATENDIMENTO
+VERIFICAR AGENDA (Buscar atendimentos do dia selecionado)
+BUSCAR ATENDIMENTO
+
+tipo de consulta 
+ORTOPEDIA
+CARDIOLOGIA
+PNEUMO
+GINECOLOGISTA
+PEDIATRIA
+NEUROLOGIA
+
+idprotocolo
+tipo_atendimento
+fisioterapueta
+paciente (id, convenio)
+bloco_inicio
+bloco
+horario
+data
+observacoes
+1
+!
+!
+1
+pre-atendimento [table]
+sintomas_basicos
+
+consultas(sessão)
+id
+hora
+
+
+TELA
+
+NOME	CODIGO
+BLOCO	CONVENIO
+AGENDA	UBS
+TIPO DE CONSULTA
+SALVAR
+PROTCOLO LABEL
