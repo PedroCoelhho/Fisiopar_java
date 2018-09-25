@@ -1,0 +1,98 @@
+<h1>Alterações</h1>
+
+<h3> Alterações no Sistema </h3>
+
+<h4> Juan </h4>
+
+- Agora o login também pode ser feito apertando ENTER no campo de senha
+- JInternalFrame[] telas na classe DataSource está deprecated.
+- Agora é necessário instanciar a tela à ser aberta diretamento na instânciação do DComponent
+- O ícone do atalho agora é puxado da propriedade frameIcon do JInternalFrame para melhor usabilidade
+  - Alterado DataSource
+  - Alterado DComponent
+- O texto do atalho agora é puxado do título do JInternalFrame (Teste do teste)
+- Adicionado ToolTip Texts para os ícones
+  - Alterado DComponent
+  - Funcionamento: Ao definir um texto na propriedade tooltiptext de um InternalFrame,
+ o DCompent vai ler este valor, definir para ele mesmo, e mostrar ao deixar o mouse
+ em cima do ícone.
+- Criado botão de Sair para deslogar o usuário
+  - Alterado Main Frame
+  - Criado novo método logout(Main m) em Yagami
+
+- Criado Cadastro de Atendimento (Em progresso)
+  - Novo InternalFrame MenuAtendimento
+  - Novo InternalFrame CadAtendimento
+  - Novo JDialog InsAgenda
+  - Novo Model, Control e Dao Atendimento
+  - Novo Model, Control e Dao Agenda
+  - Novo Model, Control e Dao UBS
+
+<h4> Maicon</h4>
+
+- Criado validador de CPF
+  - Novo método na classe Yagami
+  - Alteração no CadPaciente
+
+<h4> Vitinho </h4>
+
+- Criada tela de cadastro de aluno
+  - Novo CadAluno
+
+<h4> Furlan e Sanches </h4>
+
+- Criado Model e Dao do Aluno e do Funcionário
+  - Aluno, AlunoDao
+  - Funcionario, FuncionarioDao
+
+<h4> Zampiroli</h4>
+
+- Criado níveis de acesso para Usuários
+  - Alterado UsuarioDao
+  - Alterado DataSource
+  - Alterado Model de Usuario
+  - Alterado Yagami
+  - Alterado Forms Login e Main
+  - Alterado CadUsuario
+
+<h3> Alterações no Banco de Dados </h3>
+
+<h4> Juan </h4>
+
+- Criada tabela pre_atendimento
+  - id_patendimento
+  - fk_paciente
+  - sintomas
+
+- Criada tabela atendimento
+  - id_atendimento
+  - tipo_atendimento
+  - fk_medico
+  - bloco_inicial
+  - bloco_atual
+  - horario
+  - data_at
+  - observacoes
+  - fk_patendimento
+  - fk_ubs
+
+- Criada tabela consulta
+  - id_consulta
+  - fk_atendimento
+  - hora
+  - datac
+
+- Criada tabela agenda 
+  - id_agenda
+  - data_ag
+  - hora_ag
+  - tipo
+  - fk_atendimento
+  - fk_consulta
+  - detalhes
+  - fk_consulta
+
+<h4> Zampiroli</h4>
+
+- Adicionada coluna nivelAcesso na tabela usuario
+  - [alter table usuario add nivelAcesso int not null after id;.]

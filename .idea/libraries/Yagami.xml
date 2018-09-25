@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Yagami">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/Yagami.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
