@@ -15971,7 +15971,7 @@ INSERT INTO `medico` (`id_medico`, `nome`, `cpf`, `rg`, `tel_prim`, `tel_sec`, `
 --
 
 CREATE TABLE `paciente` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(55) NOT NULL,
   `data_nasc` date NOT NULL,
   `sexo` enum('Masculino','Feminino') NOT NULL,
@@ -15989,7 +15989,8 @@ CREATE TABLE `paciente` (
   `cns` varchar(55) DEFAULT NULL,
   `valid_cart` date DEFAULT NULL,
   `dat_hr` varchar(50) DEFAULT NULL,
-  `observacoes` varchar(50000) DEFAULT NULL
+  `observacoes` varchar(50000) DEFAULT NULL,
+  PRIMARY KEY (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -16179,7 +16180,7 @@ ALTER TABLE `medico`
 -- Indexes for table `paciente`
 --
 ALTER TABLE `paciente`
-  ADD PRIMARY KEY (`id`),
+  
   ADD KEY `fk_endereco` (`fk_endereco`);
 
 --
