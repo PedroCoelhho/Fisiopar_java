@@ -1,0 +1,11 @@
+
+cadastro paciente
+campos NOME, NOME MÃE, NOME RESPONSÁVEL, E-MAIL, CONVÊNIO: Sem mascara (aceitando números  e caracteres especiais).
+
+cadastro funcionario
+Campos NOME, RG NOME DO RESP, NOME DA MÃE, TELEFONE, E-MAIL, CARGO, SETOR, (aceitando números  e caracteres especiais).
+
+cadastro fisioterapeuta
+campos NOME, TELEFONE, RG, E-MAIL,(aceitando números  e caracteres especiais).
+
+View Funcionario ou Fisioterapeuta -> Bug ao cadastrar, após clicar para salvar os dados, caso esqueça um campo não é possível editar os impuutss.
